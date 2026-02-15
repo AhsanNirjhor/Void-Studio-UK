@@ -42,10 +42,7 @@ const serviceIcons = [
 
 export default function Services() {
   return (
-    <section
-      id="services"
-      className="mx-auto w-full max-w-6xl px-6 pb-24 pt-6"
-    >
+    <section id="services" className="mx-auto w-full max-w-6xl px-6 pb-24 pt-6">
       <div className="text-center">
         <h2 className="text-3xl font-semibold text-[#1d1f29] sm:text-4xl">
           What We Do
@@ -58,7 +55,8 @@ export default function Services() {
         {services.map((service, index) => (
           <div
             key={service.title}
-            className="rounded-3xl border border-white/70 bg-white p-6 shadow-[0_18px_30px_rgba(15,23,42,0.08)]"
+            data-reveal
+            className="reveal reveal-up rounded-3xl border border-white/70 bg-white p-6 shadow-[0_18px_30px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_22px_36px_rgba(15,23,42,0.16)]"
           >
             <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#6c39ff] to-[#ff4fd8] text-white">
               <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none">

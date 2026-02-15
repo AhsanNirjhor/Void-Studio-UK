@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#1b2141] text-white">
+    <footer className="bg-[#0f142d] text-white">
       <div className="mx-auto w-full max-w-6xl px-6 py-16">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_3fr]">
           <div>
@@ -60,7 +60,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 rounded-3xl bg-[#242c52] px-6 py-8 text-center">
+        <div className="mt-12 rounded-3xl bg-[#1a2142] px-6 py-8 text-center">
           <div className="text-xl font-semibold">Stay Updated</div>
           <p className="mt-2 text-sm text-white/70">
             Get the latest insights on product development and startup growth

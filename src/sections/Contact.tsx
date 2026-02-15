@@ -17,7 +17,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-gradient-to-r from-[#1f2455] via-[#2b2a6a] to-[#5c2aa8] py-20 text-white"
+      className="bg-gradient-to-r from-[#141a3c] via-[#1f2355] to-[#4f1f8a] py-20 text-white"
     >
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 lg:grid-cols-[1.1fr_1fr]">
         <div>
@@ -59,7 +59,7 @@ export default function Contact() {
             ))}
           </div>
         </div>
-        <div className="rounded-3xl bg-white/12 p-6 shadow-[0_20px_40px_rgba(20,22,60,0.35)]">
+        <div className="rounded-3xl bg-white/12 p-6 shadow-[0_24px_44px_rgba(8,10,32,0.5)]">
           <form className="space-y-5">
             <div>
               <label className="text-xs text-white/70">Your Name</label>

@@ -40,7 +40,8 @@ export default function Testimonials() {
           {testimonials.map((item) => (
             <div
               key={item.name}
-              className="relative rounded-3xl border border-white/70 bg-white p-7 text-left shadow-[0_18px_30px_rgba(15,23,42,0.08)]"
+              data-reveal
+              className="reveal reveal-up relative rounded-3xl border border-white/70 bg-white p-7 text-left shadow-[0_18px_30px_rgba(15,23,42,0.08)]"
             >
               <div className="absolute -left-3 -top-3 flex h-9 w-9 items-center justify-center rounded-full bg-[#6c39ff] text-white">
                 <svg
@@ -76,7 +77,10 @@ export default function Testimonials() {
             </div>
           ))}
         </div>
-        <div className="mt-12 grid gap-4 rounded-3xl border border-white/70 bg-white px-6 py-5 text-left shadow-[0_18px_30px_rgba(15,23,42,0.08)] sm:grid-cols-3 sm:text-center">
+        <div
+          data-reveal
+          className="reveal reveal-up mt-12 grid gap-4 rounded-3xl border border-white/70 bg-white px-6 py-5 text-left shadow-[0_18px_30px_rgba(15,23,42,0.08)] sm:grid-cols-3 sm:text-center"
+        >
           {stats.map((stat, index) => (
             <div
               key={stat.label}

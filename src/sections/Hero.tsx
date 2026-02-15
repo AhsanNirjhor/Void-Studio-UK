@@ -4,7 +4,7 @@ export default function Hero() {
       id="how-it-works"
       className="mx-auto flex w-full max-w-6xl flex-col items-center px-6 pb-16 pt-20 text-center md:pt-28"
     >
-      <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-semibold text-[#4f2de1] shadow-[0_12px_24px_rgba(30,41,59,0.08)]">
+      <div className="hero-reveal hero-delay-1 mb-6 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-semibold text-[#4f2de1] shadow-[0_12px_24px_rgba(30,41,59,0.08)]">
         <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-[#efe9ff]">
           <svg
             viewBox="0 0 24 24"
@@ -16,18 +16,18 @@ export default function Hero() {
         </span>
         Trusted by 50+ Startups
       </div>
-      <h1 className="max-w-4xl text-4xl font-semibold leading-tight text-[#141821] sm:text-5xl md:text-6xl">
+      <h1 className="hero-reveal hero-delay-2 max-w-4xl text-4xl font-semibold leading-tight text-[#141821] sm:text-5xl md:text-6xl">
         <span className="bg-gradient-to-r from-[#6c39ff] to-[#b14bff] bg-clip-text text-transparent">
           Empowering Startups
         </span>{" "}
         to Build Validated Digital Products
       </h1>
-      <p className="mt-6 max-w-2xl text-base text-[#4b5565] sm:text-lg">
+      <p className="hero-reveal hero-delay-3 mt-6 max-w-2xl text-base text-[#4b5565] sm:text-lg">
         We partner with early-stage startups and SMEs to transform ideas into
         market-ready digital experiences through strategic design and
         development.
       </p>
-      <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
+      <div className="hero-reveal hero-delay-4 mt-8 flex flex-col items-center gap-4 sm:flex-row">
         <button className="flex items-center gap-2 rounded-full bg-gradient-to-r from-[#6c39ff] to-[#8a3bff] px-7 py-3 text-sm font-semibold text-white shadow-[0_18px_32px_rgba(108,57,255,0.35)]">
           See How It Works
           <span className="text-lg">→</span>
@@ -36,7 +36,7 @@ export default function Hero() {
           Contact Us
         </button>
       </div>
-      <div className="mt-12 grid w-full max-w-3xl grid-cols-1 gap-6 text-center sm:grid-cols-3">
+      <div className="hero-reveal hero-delay-4 mt-12 grid w-full max-w-3xl grid-cols-1 gap-6 text-center sm:grid-cols-3">
         {[
           { value: "50+", label: "Projects Delivered" },
           { value: "98%", label: "Success Rate" },

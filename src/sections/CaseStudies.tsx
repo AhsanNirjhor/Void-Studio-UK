@@ -36,7 +36,7 @@ const caseStudies = [
 
 export default function CaseStudies() {
   return (
-    <section id="projects" className="bg-[#1b2141] py-20 text-white">
+    <section id="projects" className="bg-[#12172f] py-20 text-white">
       <div className="mx-auto w-full max-w-6xl px-6">
         <div className="text-center">
           <h2 className="text-3xl font-semibold text-white sm:text-4xl">
@@ -50,9 +50,14 @@ export default function CaseStudies() {
           {caseStudies.map((item, index) => (
             <div
               key={item.title}
-              className="grid items-center gap-8 rounded-3xl border border-white/15 bg-[#222b52] p-8 md:grid-cols-[1.1fr_1fr]"
+              className="grid items-center gap-8 rounded-3xl border border-white/12 bg-[#1b2244] p-8 md:grid-cols-[1.1fr_1fr]"
             >
-              <div className={index % 2 === 1 ? "md:order-2" : undefined}>
+              <div
+                className={`reveal reveal-left ${
+                  index % 2 === 1 ? "md:order-2" : ""
+                }`}
+                data-reveal
+              >
                 <span className="inline-flex rounded-full bg-[#8b63ff] px-3 py-1 text-xs font-semibold">
                   {item.tag}
                 </span>
@@ -74,11 +79,12 @@ export default function CaseStudies() {
                 </button>
               </div>
               <div
-                className={`h-64 w-full rounded-2xl ${
+                className={`h-64 w-full rounded-2xl reveal reveal-right ${
                   index === 1
                     ? "bg-[url('/window.svg')] bg-cover"
                     : "bg-gradient-to-br from-[#d0c8ff] via-[#a38bff] to-[#f1b4ff]"
                 }`}
+                data-reveal
               />
             </div>
           ))}
