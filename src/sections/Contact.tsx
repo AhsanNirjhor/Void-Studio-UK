@@ -15,7 +15,10 @@ const infoItems = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-[#141a36] py-20 text-white">
+    <section
+      id="contact"
+      className="bg-gradient-to-r from-[#1f2455] via-[#2b2a6a] to-[#5c2aa8] py-20 text-white"
+    >
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 lg:grid-cols-[1.1fr_1fr]">
         <div>
           <h2 className="text-4xl font-semibold leading-tight sm:text-5xl">
@@ -56,14 +59,14 @@ export default function Contact() {
             ))}
           </div>
         </div>
-        <div className="rounded-3xl bg-white/10 p-6 shadow-[0_20px_40px_rgba(10,14,30,0.45)]">
+        <div className="rounded-3xl bg-white/12 p-6 shadow-[0_20px_40px_rgba(20,22,60,0.35)]">
           <form className="space-y-5">
             <div>
               <label className="text-xs text-white/70">Your Name</label>
               <input
                 type="text"
                 placeholder="John Doe"
-                className="mt-2 w-full rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none"
+                className="mt-2 w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/50 focus:outline-none"
               />
             </div>
             <div>
@@ -71,15 +74,17 @@ export default function Contact() {
               <input
                 type="email"
                 placeholder="john@company.com"
-                className="mt-2 w-full rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none"
+                className="mt-2 w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/50 focus:outline-none"
               />
             </div>
             <div>
-              <label className="text-xs text-white/70">Company (Optional)</label>
+              <label className="text-xs text-white/70">
+                Company (Optional)
+              </label>
               <input
                 type="text"
                 placeholder="Your Company"
-                className="mt-2 w-full rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none"
+                className="mt-2 w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/50 focus:outline-none"
               />
             </div>
             <div>
@@ -89,7 +94,7 @@ export default function Contact() {
               <textarea
                 rows={4}
                 placeholder="I have a startup idea about..."
-                className="mt-2 w-full rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none"
+                className="mt-2 w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/50 focus:outline-none"
               />
             </div>
             <button

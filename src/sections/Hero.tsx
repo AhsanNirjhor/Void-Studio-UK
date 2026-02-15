@@ -50,9 +50,6 @@ export default function Hero() {
           </div>
         ))}
       </div>
-      <div className="mt-12 flex h-12 w-8 items-center justify-center rounded-full border border-[#d0d5dd] bg-white/70 text-[#667085] shadow-[0_12px_20px_rgba(15,23,42,0.08)]">
-        <div className="h-3 w-1.5 rounded-full bg-[#c7c1ff]" />
-      </div>
     </section>
   );
 }

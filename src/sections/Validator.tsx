@@ -18,7 +18,7 @@ export default function Validator() {
     <section id="validator" className="bg-[#7a1dff]">
       <div className="mx-auto w-full max-w-6xl px-6 py-20">
         <div className="grid gap-10 rounded-3xl bg-gradient-to-br from-[#7a1dff] via-[#9a33ff] to-[#f85abd] p-10 text-white md:grid-cols-[1.1fr_1fr]">
-          <div>
+          <div className="animate-slide-in-left">
             <span className="inline-flex rounded-full bg-white/15 px-4 py-2 text-xs font-semibold">
               Free Startup Validator Tool
             </span>
@@ -49,7 +49,7 @@ export default function Validator() {
               </button>
             </div>
           </div>
-          <div className="relative rounded-3xl bg-white/15 p-6 backdrop-blur">
+          <div className="relative rounded-3xl bg-white/15 p-6 backdrop-blur animate-slide-in-right">
             <div className="absolute right-4 top-4 rounded-full bg-[#ffdf4f] px-4 py-1 text-xs font-semibold text-[#7a1dff]">
               100% Free
             </div>

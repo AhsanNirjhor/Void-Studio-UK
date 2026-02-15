@@ -36,10 +36,7 @@ const caseStudies = [
 
 export default function CaseStudies() {
   return (
-    <section
-      id="projects"
-      className="bg-[#0f1627] py-20 text-white"
-    >
+    <section id="projects" className="bg-[#1b2141] py-20 text-white">
       <div className="mx-auto w-full max-w-6xl px-6">
         <div className="text-center">
           <h2 className="text-3xl font-semibold text-white sm:text-4xl">
@@ -53,20 +50,18 @@ export default function CaseStudies() {
           {caseStudies.map((item, index) => (
             <div
               key={item.title}
-              className="grid items-center gap-8 rounded-3xl border border-white/10 bg-[#141c31] p-8 md:grid-cols-[1.1fr_1fr]"
+              className="grid items-center gap-8 rounded-3xl border border-white/15 bg-[#222b52] p-8 md:grid-cols-[1.1fr_1fr]"
             >
               <div className={index % 2 === 1 ? "md:order-2" : undefined}>
-                <span className="inline-flex rounded-full bg-[#7c4dff] px-3 py-1 text-xs font-semibold">
+                <span className="inline-flex rounded-full bg-[#8b63ff] px-3 py-1 text-xs font-semibold">
                   {item.tag}
                 </span>
                 <h3 className="mt-4 text-2xl font-semibold">{item.title}</h3>
-                <p className="mt-3 text-sm text-white/70">
-                  {item.description}
-                </p>
-                <div className="mt-6 grid grid-cols-3 gap-4 text-sm text-white/70">
+                <p className="mt-3 text-sm text-white/70">{item.description}</p>
+                <div className="mt-6 grid grid-cols-3 gap-4 text-sm text-white/75">
                   {item.stats.map((stat) => (
                     <div key={stat.label}>
-                      <div className="text-lg font-semibold text-[#b68cff]">
+                      <div className="text-lg font-semibold text-[#c3a3ff]">
                         {stat.value}
                       </div>
                       <div className="text-xs">{stat.label}</div>
